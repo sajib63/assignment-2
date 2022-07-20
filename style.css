@@ -32,14 +32,24 @@ body{
  .greatest-text h1{
     font-size: 48px;
     font-weight: 600;
+    transition: ease-in color 2s;
+ }
+ .greatest:hover h1{
+   color: green;
+   transition: 2s;
  }
  .greatest-text p{
     font-size: 16px;
     font-weight: 500;
     color: gray;
+    transition: color 2s;
+ }
+ .greatest:hover p{
+   color: green;
+   transition: 2s;
    
  }
- 
+
  .toltip{
     display: none;
     width: 100%;
@@ -52,6 +62,7 @@ body{
     margin-top: 40px;
  }
 
+
  .button-area{
     display: flex;
     width: 150px;
@@ -59,14 +70,20 @@ body{
     background-color: red;
     align-items: center;
     margin-bottom: 20px;
-    transition: transform 2s;
-   
-    
+    transition: transform 2s, background-color 2s;
+  
  }
- .button-area:hover{
-   transform: rotate(360deg);
-   transition: transform 2s;
+ .fa-street-view{
+   font-size: 20px;
  }
+
+ 
+ .greatest:hover .button-area{
+   transform: scale(1.1);
+   transition: 2s;
+   background-color: green;
+ }
+
 
  .button-text a{
     text-decoration: none;
@@ -356,7 +373,7 @@ body{
    .main-section{
       display: grid;
       grid-template-columns: 30% 70%;
-      grid-row-gap: 10px;
+      grid-row-gap: 20px;
    }
   
    .three-column{

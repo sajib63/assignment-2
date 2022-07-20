@@ -30,12 +30,23 @@ body{
  .greatest-text h1{
     font-size: 48px;
     font-weight: 600;
+    transition: ease-in color 2s;
+ }
+ .greatest:hover h1{
+   color: green;
+   transition: 2s;
  }
  
  .greatest-text p{
     font-size: 16px;
     font-weight: 500;
     color: gray;
+    transition: color 2s;
+   
+ }
+ .greatest:hover p{
+   color: green;
+   transition: 2s;
    
  }
  .toltip{
@@ -57,8 +68,12 @@ body{
     background-color: red;
     align-items: center;
     margin-bottom: 20px;
-   
-    
+    transition: transform 2s, background-color 2s; 
+ }
+ .greatest:hover .button-area{
+   transform: scale(1.1);
+   transition: 2s;
+   background-color: green;
  }
  .button-text a{
     text-decoration: none;
