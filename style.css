@@ -12,7 +12,7 @@ body{
  /* header area start  */
  .container{
     width: 80%;
-    margin: 30px 30px 30px 92px
+    margin: 30px 30px 30px 92px;
 
  }
  .greatest{
@@ -33,7 +33,15 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: gray;
+   
  }
+ .toltip{
+    display: none;
+    width: 100%;
+
+ }
+
+
  .greatest-image img{
     width: 100%;
     margin-top: 40px;
@@ -72,6 +80,14 @@ body{
     height: 200px;
     border-radius: 5px;
     margin-right: 10px;
+ }
+ #blog{
+    background-color: red;
+   
+ }
+ #blog a{
+    color: white!important;
+
  }
  .main-navigation{
     background-color: white;
@@ -161,3 +177,226 @@ body{
     margin-top: 20px;
  }
  /* footer area end  */
+
+
+
+ /* media query start  */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 95%;
+        margin: 0;
+        margin-left: 12px;
+        margin-top: 10px;
+     
+     }
+     .greatest{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        text-align: center; 
+      
+     }
+     .greatest-text h1{
+        font-size: 55px;
+     }
+     .greatest-text p{
+       display: none;
+       
+     }
+     .toltip{
+        display: block!important;
+      
+     }
+     .greatest-image img{
+        width: 80%;
+        margin-top: 0;
+     }
+     .button-area{
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-bottom: 20px;
+       
+     }
+
+
+     .main-section{
+        grid-template-columns:repeat(1,1fr);
+      
+     }
+     .three-column{
+        background-color:white;
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 10px;
+     }
+     .main-navigation{
+        background-color: white;
+        width: 200px;
+        margin-top: 0;
+        margin-left:120px;
+       
+     }
+     .main-navigation a{
+        font-size: 25px;
+        color: black;
+     }
+
+     .all-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+     }
+
+     .transfer{
+        margin-left: 10px;
+     }
+     .transfer a{
+        font-size: 20px;
+        color:black ;
+     }
+     .player h3{
+        font-size: 25px;
+        margin-left: 10px;
+    
+     }
+     .player p{
+        margin-left: 10px;
+        font-size: 30px;
+     }
+     .player span{
+        margin-left: 20px;
+     }
+
+     .footer-section a{
+      margin-bottom: 30px;
+      display: block; 
+      font-size: 20px;
+   }
+   .footer-section hr{
+      width: 400px;
+      color: rgb(29, 28, 28) !important;
+   }
+   .footer-icon a{
+      display: inline;
+   }
+
+    
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+
+   .container{
+      width: 100%;
+      margin: 0;
+      margin-left: 0;
+      margin-top: 20px;
+   
+   }
+   .greatest{
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      text-align: center; 
+    
+   }
+   .greatest-text h1{
+      font-size: 40px;
+      margin-left: 10px;
+      margin-top: 50px;
+   }
+   .greatest-text p{
+     display: block;
+     margin-left: 46px;
+     
+   }
+   .toltip{
+      display: none!important;
+      width: 100%;
+  
+   }
+   .greatest-image img{
+      width: 100%;
+      margin-top: 40px;
+   }
+   .button-area{
+      margin-top: 20px;
+      margin-left: 50px;
+      border-radius: 5px;
+   
+   }
+
+   .main-section{
+      display:block;
+   }
+  
+   .three-column{
+      display: flex;
+      background-color:white;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-top: 30px;
+   }
+   .main-navigation{
+      background-color: white;
+      width: 200px;
+      margin-top: 0;
+      margin-left:0;
+      border: 1px solid rgb(216, 205, 205);
+      margin-left: 5px;
+     
+   }
+   .main-navigation a{
+      font-size: 25px;
+      color: black;
+   }
+
+   .all-players{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  
+   }
+
+   .transfer{
+      margin-left: 10px;
+   }
+   .transfer a{
+      font-size: 20px;
+      color:black ;
+   }
+   .all-players{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+  
+   }
+   .player h3{
+      font-size: 25px;
+      margin-left: 10px;
+  
+   }
+   .player p{
+      margin-left: 10px;
+      font-size: 30px;
+   }
+   .player span{
+      margin-left: 20px;
+   }
+
+   .footer-section a{
+    margin-bottom: 30px;
+    display: block; 
+    font-size: 20px;
+ }
+ .footer-section hr{
+    width: 400px;
+    color: rgb(29, 28, 28) !important;
+ }
+ .footer-icon a{
+    display: inline;
+ }
+
+
+
+}
