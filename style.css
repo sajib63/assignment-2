@@ -9,6 +9,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
 
 }
+
+/* animation start */
+
  /* header area start  */
  .container{
     width: 80%;
@@ -24,6 +27,7 @@ body{
     padding: 20px 20px 0;
     border-radius: 10px;
     
+    
  }
  .greatest-text h1{
     font-size: 48px;
@@ -35,6 +39,7 @@ body{
     color: gray;
    
  }
+ 
  .toltip{
     display: none;
     width: 100%;
@@ -54,9 +59,15 @@ body{
     background-color: red;
     align-items: center;
     margin-bottom: 20px;
+    transition: transform 2s;
    
     
  }
+ .button-area:hover{
+   transform: rotate(360deg);
+   transition: transform 2s;
+ }
+
  .button-text a{
     text-decoration: none;
     color: rgb(233, 230, 230);
@@ -207,6 +218,7 @@ body{
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
         text-align: center; 
+       
       
      }
      .greatest-text h1{
@@ -346,12 +358,6 @@ body{
       grid-template-columns: 30% 70%;
       grid-row-gap: 10px;
    }
-   /* .three-column{
-      background-color:black;
-      height: 200px;
-      border-radius: 5px;
-      margin-right: 10px;
-   } */
   
    .three-column{
       background-color:white;
@@ -488,7 +494,7 @@ body{
       width: 215px;
       height: 70px;
       margin-bottom: 100px;
-      background-color: red:
+      background-color: red;
 
    
    }

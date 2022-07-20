@@ -23,12 +23,15 @@ body{
     color: white;
     padding: 20px 20px 0;
     border-radius: 10px;
+  
     
  }
+ 
  .greatest-text h1{
     font-size: 48px;
     font-weight: 600;
  }
+ 
  .greatest-text p{
     font-size: 16px;
     font-weight: 500;
